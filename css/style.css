@@ -114,6 +114,105 @@
             padding: 0 2rem;
             animation: fadeInUp 1s ease;
         }
+        /* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .section-title h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .services-grid,
+    .features-grid,
+    .instructors-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .cta-button {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .service-card,
+    .feature-card,
+    .instructor-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
 
         .hero h1 {
             font-size: 4rem;
