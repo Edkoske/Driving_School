@@ -212,6 +212,24 @@
         grid-template-columns: 1fr;
     }
 }
+.hero .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
 
 
         .hero h1 {
