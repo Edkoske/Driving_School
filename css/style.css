@@ -11,6 +11,23 @@
             color: #333;
             overflow-x: hidden;
         }
+        /* 🔹 Responsive styles */
+@media (max-width: 768px) {
+    .hero .btn {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 100%;   /* Full width on small screens */
+        display: block;
+        border-radius: 12px; /* less rounded for mobile */
+    }
+}
 
         /* Header & Navigation */
         .header {
