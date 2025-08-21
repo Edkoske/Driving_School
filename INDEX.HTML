@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Road Driving School - Learn to Drive with Confidence</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">🚗 Open Road Driving School</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Courses</a></li>
+                <li><a href="#why-choose">Why Choose Us</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Learn to Drive with Confidence</h1>
+            <p>Professional driving instruction with experienced, certified instructors. Start your journey to safe, confident driving today.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary">View Courses</a>
+                <a href="#contact" class="btn-secondary">Book Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driving Field Images Section -->
+    <section class="driving-fields" style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Training Facilities</h2>
+                <p>State-of-the-art driving practice areas designed for safe, comprehensive learning</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <!-- Parking Practice Area -->
+                <div style="background: #f8fafc; border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid #e2e8f0;">
+                    <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg" alt="Parking practice area with cones and marked spaces" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onerror="this.src=''; this.alt='Parking practice area - Image failed to load'; this.style.display='none';">
+                    <h3 style="color: #000; margin-bottom: 0.5rem;">Parking Practice Area</h3>
+                    <p style="color: #64748b;">Master parallel, perpendicular, and angle parking with guided cone courses</p>
+                </div>
+
+                <!-- Highway Simulation Track -->
+                <div style="background: #f8fafc; border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid #e2e8f0;">
+                    <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="Highway with multiple lanes and cars for driving practice" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onerror="this.src=''; this.alt='Highway simulation track - Image failed to load'; this.style.display='none';">
+                    <h3 style="color: #000; margin-bottom: 0.5rem;">Highway Simulation Track</h3>
+                    <p style="color: #64748b;">Practice highway merging, lane changes, and high-speed driving safely</p>
+                </div>
+
+                <!-- City Driving Course -->
+                <div style="background: #f8fafc; border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid #e2e8f0;">
+                    <img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg" alt="City intersection with traffic lights and urban driving environment" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onerror="this.src=''; this.alt='City driving course - Image failed to load'; this.style.display='none';">
+                    <h3 style="color: #000; margin-bottom: 0.5rem;">City Driving Course</h3>
+                    <p style="color: #64748b;">Navigate intersections, traffic lights, and urban driving scenarios</p>
+                </div>
+
+                <!-- Defensive Driving Track -->
+                <div style="background: #f8fafc; border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid #e2e8f0;">
+                    <img src="https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg" alt="Curved road with safety cones for defensive driving practice" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onerror="this.src=''; this.alt='Defensive driving track - Image failed to load'; this.style.display='none';">
+                    <h3 style="color: #000; margin-bottom: 0.5rem;">Defensive Driving Track</h3>
+                    <p style="color: #64748b;">Emergency braking, obstacle avoidance, and adverse weather training</p>
+                </div>
+
+                <!-- Night Driving Simulator -->
+                <div style="background: #f8fafc; border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid #e2e8f0;">
+                    <img src="https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg" alt="Night driving scene with headlights and street lighting" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onerror="this.src=''; this.alt='Night driving simulator - Image failed to load'; this.style.display='none';">
+                    <h3 style="color: #000; margin-bottom: 0.5rem;">Night Driving Simulator</h3>
+                    <p style="color: #64748b;">Low-light driving techniques, headlight usage, and visibility training</p>
+                </div>
+
+                <!-- Test Route Practice -->
+                <div style="background: #f8fafc; border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid #e2e8f0;">
+                    <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg" alt="DMV test route with marked driving course and examination area" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onerror="this.src=''; this.alt='Official test route practice - Image failed to load'; this.style.display='none';">
+                    <h3 style="color: #000; margin-bottom: 0.5rem;">Official Test Route Practice</h3>
+                    <p style="color: #64748b;">Familiarize yourself with actual DMV test routes and requirements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Driving Courses</h2>
+                <p>Comprehensive driving programs designed to build your skills and confidence on the road</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <span class="service-icon">🎓</span>
+                    <h3>Beginner Driver Course</h3>
+                    <p>Perfect for first-time drivers. Learn the fundamentals of safe driving with our patient, experienced instructors.</p>
+                    <ul class="service-features">
+                        <li>10 hours of in-car instruction</li>
+                        <li>Traffic rules and road signs</li>
+                        <li>Basic vehicle operation</li>
+                        <li>Parking and maneuvering</li>
+                        <li>Defensive driving techniques</li>
+                        <li>Road test preparation</li>
+                    </ul>
+                    <div class="price-tag">$450 Complete Package</div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon">⚡</span>
+                    <h3>Intensive Driving Course</h3>
+                    <p>Fast-track your learning with our intensive program. Get road-ready in just one week.</p>
+                    <ul class="service-features">
+                        <li>20 hours of intensive training</li>
+                        <li>Daily 4-hour sessions</li>
+                        <li>Accelerated learning methods</li>
+                        <li>Mock driving tests</li>
+                        <li>Highway driving practice</li>
+                        <li>Test booking assistance</li>
+                    </ul>
+                    <div class="price-tag">$850 One Week Program</div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon">🔄</span>
+                    <h3>Refresher Course</h3>
+                    <p>Brush up on your driving skills or overcome driving anxiety with personalized refresher lessons.</p>
+                    <ul class="service-features">
+                        <li>Flexible lesson scheduling</li>
+                        <li>Confidence building exercises</li>
+                        <li>Highway driving practice</li>
+                        <li>Parallel parking mastery</li>
+                        <li>Night driving training</li>
+                        <li>Bad weather driving</li>
+                    </ul>
+                    <div class="price-tag">$60 per hour</div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon">🏆</span>
+                    <h3>Advanced Driving</h3>
+                    <p>Master advanced techniques including defensive driving, emergency maneuvers, and challenging conditions.</p>
+                    <ul class="service-features">
+                        <li>Advanced maneuvering skills</li>
+                        <li>Emergency braking techniques</li>
+                        <li>Skid control and recovery</li>
+                        <li>Advanced highway driving</li>
+                        <li>Commercial vehicle basics</li>
+                        <li>Performance driving tips</li>
+                    </ul>
+                    <div class="price-tag">$75 per hour</div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon">📋</span>
+                    <h3>Road Test Preparation</h3>
+                    <p>Focused preparation for your driving test with mock tests and examiner tips.</p>
+                    <ul class="service-features">
+                        <li>Mock driving tests</li>
+                        <li>Test route familiarization</li>
+                        <li>Examiner expectations</li>
+                        <li>Common mistake prevention</li>
+                        <li>Confidence building</li>
+                        <li>Test day preparation</li>
+                    </ul>
+                    <div class="price-tag">$200 Test Prep Package</div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon">👥</span>
+                    <h3>Group Lessons</h3>
+                    <p>Learn with friends or family members in our group lesson packages at discounted rates.</p>
+                    <ul class="service-features">
+                        <li>2-3 students per session</li>
+                        <li>Shared learning experience</li>
+                        <li>Discounted group rates</li>
+                        <li>Flexible scheduling</li>
+                        <li>Individual attention</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                    <div class="price-tag">$40 per person/hour</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Open Road?</h2>
+                <p>We're committed to providing the highest quality driving education with proven results</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>95% Pass Rate</h3>
+                    <p>Our students consistently achieve excellent results on their driving tests thanks to our proven teaching methods.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Certified Instructors</h3>
+                    <p>All our instructors are fully licensed, experienced professionals with excellent safety records.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Modern Fleet</h3>
+                    <p>Learn in safe, well-maintained vehicles equipped with dual controls and the latest safety features.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Book lessons at times that work for you, including evenings and weekends.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Quality instruction at affordable rates with package deals and payment plans available.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Door-to-Door Service</h3>
+                    <p>We pick you up and drop you off at your preferred location for maximum convenience.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Online Booking</h3>
+                    <p>Easy online scheduling system with instant confirmation and lesson reminders.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Fully Insured</h3>
+                    <p>Complete insurance coverage for your peace of mind during all lessons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors" id="instructors">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Expert Instructors</h2>
+                <p>Professional, patient, and passionate about teaching safe driving</p>
+            </div>
+
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="instructor-image">👨‍🏫</div>
+                    <div class="instructor-info">
+                        <h3>Michael Johnson</h3>
+                        <div class="instructor-title">Senior Driving Instructor</div>
+                        <div class="instructor-experience">15+ years experience • 2,000+ students taught</div>
+                        <div class="instructor-specialties">
+                            <span class="specialty-tag">Beginner Friendly</span>
+                            <span class="specialty-tag">Nervous Drivers</span>
+                            <span class="specialty-tag">Test Prep</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-image">👩‍🏫</div>
+                    <div class="instructor-info">
+                        <h3>Sarah Williams</h3>
+                        <div class="instructor-title">Advanced Driving Specialist</div>
+                        <div class="instructor-experience">12+ years experience • Highway & City Expert</div>
+                        <div class="instructor-specialties">
+                            <span class="specialty-tag">Advanced Skills</span>
+                            <span class="specialty-tag">Highway Driving</span>
+                            <span class="specialty-tag">Defensive Driving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-image">👨‍🏫</div>
+                    <div class="instructor-info">
+                        <h3>David Chen</h3>
+                        <div class="instructor-title">Intensive Course Instructor</div>
+                        <div class="instructor-experience">10+ years experience • Fast-track Specialist</div>
+                        <div class="instructor-specialties">
+                            <span class="specialty-tag">Intensive Courses</span>
+                            <span class="specialty-tag">Quick Learning</span>
+                            <span class="specialty-tag">Adult Learners</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-image">👩‍🏫</div>
+                    <div class="instructor-info">
+                        <h3>Emma Rodriguez</h3>
+                        <div class="instructor-title">Teen Driving Specialist</div>
+                        <div class="instructor-experience">8+ years experience • Youth Education Expert</div>
+                        <div class="instructor-specialties">
+                            <span class="specialty-tag">Teen Drivers</span>
+                            <span class="specialty-tag">Parent Coaching</span>
+                            <span class="specialty-tag">Safety Focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Started Today</h2>
+                <p>Ready to begin your driving journey? Contact us to book your first lesson or free consultation</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Our Office</h4>
+                            <p>456 Main Street, Suite 200<br>Downtown, ST 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+254732157" style="color: #2563eb; text-decoration: none; font-weight: bold;">+254732157</a><br>Mon-Sat: 8AM-8PM, Sun: 10AM-6PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:info@openroaddriving.com" style="color: #2563eb; text-decoration: none;">info@openroaddriving.com</a><br><a href="mailto:bookings@openroaddriving.com" style="color: #2563eb; text-decoration: none;">bookings@openroaddriving.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4>Lesson Hours</h4>
+                            <p>Flexible scheduling available<br>Early morning to evening slots</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course Interest *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select a Course</option>
+                            <option value="beginner">Beginner Driver Course</option>
+                            <option value="intensive">Intensive Driving Course</option>
+                            <option value="refresher">Refresher Course</option>
+                            <option value="advanced">Advanced Driving</option>
+                            <option value="test-prep">Road Test Preparation</option>
+                            <option value="group">Group Lessons</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Driving Experience</label>
+                        <select id="experience" name="experience">
+                            <option value="">Select Experience Level</option>
+                            <option value="none">Complete Beginner</option>
+                            <option value="some">Some Practice</option>
+                            <option value="licensed">Licensed but Rusty</option>
+                            <option value="experienced">Experienced Driver</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your goals, preferred schedule, any concerns, or special requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Book Free Consultation 🚗</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🚗 Open Road Driving School</h3>
+                    <p>Building confident, safe drivers for over 15 years. Your journey to driving independence starts here.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#services">Beginner Driver Course</a></li>
+                        <li><a href="#services">Intensive Driving</a></li>
+                        <li><a href="#services">Refresher Lessons</a></li>
+                        <li><a href="#services">Advanced Driving</a></li>
+                        <li><a href="#services">Test Preparation</a></li>
+                        <li><a href="#services">Group Lessons</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#why-choose">Door-to-Door Pickup</a></li>
+                        <li><a href="#why-choose">Flexible Scheduling</a></li>
+                        <li><a href="#why-choose">Online Booking</a></li>
+                        <li><a href="#instructors">Certified Instructors</a></li>
+                        <li><a href="#why-choose">Modern Fleet</a></li>
+                        <li><a href="#contact">Free Consultation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 456 Main Street, Suite 200<br>Downtown, ST 12345</p>
+                    <p>📞 <a href="tel:+254732157" style="color: #2563eb; text-decoration: none;">+254732157</a></p>
+                    <p>✉️ <a href="mailto:info@openroaddriving.com" style="color: #2563eb; text-decoration: none;">info@openroaddriving.com</a></p>
+                    <p>🕒 Mon-Sat: 8AM-8PM<br>Sun: 10AM-6PM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Open Road Driving School. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Book Lesson Button -->
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+        <a href="#contact" class="cta-button" style="display: block; padding: 1rem 2rem; font-size: 1.1rem; box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);">Book Lesson</a>
+    </div>
+<script src="js/main.js"></script>
+</body>
+    </html> 
