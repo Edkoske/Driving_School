@@ -18,6 +18,44 @@
         padding: 12px 28px;
     }
 }
+/* Default desktop nav menu */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mobile menu hidden by default */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 70px; /* just under header */
+    right: 20px;
+    width: 220px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+
+  /* Show when .active is toggled */
+  .nav-menu.active {
+    display: flex;
+  }
+
+  /* Show hamburger button only on mobile */
+  .mobile-menu-btn {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+}
 
 @media (max-width: 480px) {
     .hero .btn {
