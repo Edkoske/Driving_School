@@ -56,6 +56,43 @@
     z-index: 1001;
   }
 }
+/* Hide hamburger on desktop */
+.mobile-menu-btn {
+  display: none;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333; /* make it visible */
+    z-index: 1001;
+  }
+
+  /* Hide the nav menu until clicked */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  /* Show when active */
+  .nav-menu.active {
+    display: flex;
+  }
+}
 
 @media (max-width: 480px) {
     .hero .btn {
